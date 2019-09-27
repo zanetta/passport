@@ -1,3 +1,57 @@
+<h1 style="background-color:#696969;padding:5px;"> <img src="https://cdn.glitch.com/9c27f3a6-4ebe-4a92-83ac-1829721af8b1%2Flogo65.png?v=1569612543944"
+                width="50%" />
+</h1>
 <h1 class="mt-4">Dashboard</h1>
-<p class="lead mb-3">Welcome <%= user.name %></p>
-<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<p class="lead mb-3">Bem vindo <%= user.name %></p>
+<a href="/users/logout" class="btn btn-secondary">Sair</a>
+<br/>
+<div style="float:left; margin-right:10px;">
+<p>
+<form action="/atletas/ver">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Atletas</h5>
+    <p class="card-text">Lista de atletas cadastrados</p>
+    <a href="#" class="btn btn-primary">Ver</a>
+  </div>
+</div>
+</form>
+</p>
+<p>
+<form action="/campeonatos/ver">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Campeonatos</h5>
+    <p class="card-text">Lista de Campeonatos cadastrados</p>
+    <a href="#" class="btn btn-primary">Ver</a>
+  </div>
+</div>
+</form>
+</p>
+</div>
+<div style="float:left">
+ 
+
+<p>
+<form action="/resultados/ver">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Resultados</h5>
+    <p class="card-text">Resultados dos Campeonatos</p>
+    <a href="#" class="btn btn-primary">Ver</a>
+  </div>
+</div>
+</form>
+</p>
+<p>
+<form action="/ranking/ver">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Ranking</h5>
+    <p class="card-text">Ranking de acordo com os resultados de campeonatos</p>
+    <a href="#" class="btn btn-primary">Ver</a>
+  </div>
+</div>
+</form>
+</p>
+</div>
